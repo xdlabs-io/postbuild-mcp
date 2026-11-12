@@ -39,7 +39,7 @@ rl.on("line", async (line) => {
           },
           serverInfo: {
             name: "postbuild-mcp",
-            version: "2.1.24"
+            version: "2.1.25"
           }
         }
       });

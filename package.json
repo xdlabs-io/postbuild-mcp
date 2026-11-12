@@ -1,6 +1,6 @@
 {
   "name": "postbuild-mcp",
-  "version": "2.1.24",
+  "version": "2.1.25",
   "description": "MCP Server for Postbuild (postbuild.dev / git-paid) — Technical SEO, AI Search Crawler Rules (OAI-SearchBot, ClaudeBot, PerplexityBot), llms.txt & 85-Directory Launch Kit.",
   "type": "module",
   "main": "index.js",

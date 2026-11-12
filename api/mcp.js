@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     res.setHeader("Content-Type", "application/json; charset=utf-8");
     return res.status(200).json({
       name: "postbuild-mcp",
-      version: "2.1.24",
+      version: "2.1.25",
       protocolVersion: "2024-11-05",
       instructions: MCP_SERVER_INSTRUCTIONS,
       status: "ok",
@@ -45,7 +45,7 @@ export default async function handler(req, res) {
           protocolVersion: "2024-11-05",
           instructions: MCP_SERVER_INSTRUCTIONS,
           capabilities: { tools: {}, prompts: {}, resources: {} },
-          serverInfo: { name: "postbuild-mcp", version: "2.1.24" }
+          serverInfo: { name: "postbuild-mcp", version: "2.1.25" }
         }
       });
     }
