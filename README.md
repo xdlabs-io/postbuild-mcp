@@ -1,4 +1,4 @@
-﻿# Postbuild MCP Server (`git-paid`)
+# Postbuild MCP Server (`git-paid`)
 
 [![xdlabs-io/postbuild-mcp MCP server](https://glama.ai/mcp/servers/xdlabs-io/postbuild-mcp/badges/score.svg)](https://glama.ai/mcp/servers/xdlabs-io/postbuild-mcp)
 [![npm version](https://img.shields.io/npm/v/git-paid.svg)](https://www.npmjs.com/package/git-paid)

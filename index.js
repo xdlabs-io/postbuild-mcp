@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 import readline from "node:readline";
 import { MCP_TOOLS, executeMcpToolCall } from "git-paid/lib/mcp.js";
 import { POSTBUILD_VERSION } from "git-paid/lib/stateful-mcp.js";

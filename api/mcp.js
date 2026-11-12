@@ -1,4 +1,4 @@
-﻿import { MCP_TOOLS, executeMcpToolCall } from "git-paid/lib/mcp.js";
+import { MCP_TOOLS, executeMcpToolCall } from "git-paid/lib/mcp.js";
 import { POSTBUILD_VERSION } from "git-paid/lib/stateful-mcp.js";
 
 export default async function handler(req, res) {
