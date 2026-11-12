@@ -2,6 +2,7 @@
 
 [![xdlabs-io/postbuild-mcp MCP server](https://glama.ai/mcp/servers/xdlabs-io/postbuild-mcp/badges/score.svg)](https://glama.ai/mcp/servers/xdlabs-io/postbuild-mcp)
 [![npm version](https://img.shields.io/npm/v/git-paid.svg)](https://www.npmjs.com/package/git-paid)
+[![Postbuild Launch Readiness](https://www.postbuild.dev/api/badge?url=postbuild.dev)](https://www.postbuild.dev/?scan=postbuild.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Official Model Context Protocol (MCP) server for **[Postbuild](https://www.postbuild.dev)** (`git-paid` on npm).
