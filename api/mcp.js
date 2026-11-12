@@ -1,5 +1,5 @@
-import { MCP_TOOLS, executeMcpToolCall } from "git-paid/lib/mcp.js";
-import { POSTBUILD_VERSION } from "git-paid/lib/stateful-mcp.js";
+import { executeMcpToolCall } from "git-paid/lib/mcp.js";
+import { ENRICHED_MCP_TOOLS, MCP_SERVER_INSTRUCTIONS } from "../tools-schema.js";
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -15,13 +15,14 @@ export default async function handler(req, res) {
     res.setHeader("Content-Type", "application/json; charset=utf-8");
     return res.status(200).json({
       name: "postbuild-mcp",
-      version: POSTBUILD_VERSION || "2.1.23",
+      version: "2.1.24",
       protocolVersion: "2024-11-05",
+      instructions: MCP_SERVER_INSTRUCTIONS,
       status: "ok",
       homepage: "https://www.postbuild.dev",
       repository: "https://github.com/xdlabs-io/postbuild-mcp",
       npm: "https://www.npmjs.com/package/git-paid",
-      tools: MCP_TOOLS.map((t) => ({ name: t.name, description: t.description }))
+      tools: ENRICHED_MCP_TOOLS
     });
   }
 
@@ -42,8 +43,9 @@ export default async function handler(req, res) {
         id,
         result: {
           protocolVersion: "2024-11-05",
+          instructions: MCP_SERVER_INSTRUCTIONS,
           capabilities: { tools: {}, prompts: {}, resources: {} },
-          serverInfo: { name: "postbuild-mcp", version: POSTBUILD_VERSION || "2.1.23" }
+          serverInfo: { name: "postbuild-mcp", version: "2.1.24" }
         }
       });
     }
@@ -53,11 +55,23 @@ export default async function handler(req, res) {
     }
 
     if (method === "tools/list") {
-      return res.status(200).json({ jsonrpc: "2.0", id, result: { tools: MCP_TOOLS } });
+      return res.status(200).json({ jsonrpc: "2.0", id, result: { tools: ENRICHED_MCP_TOOLS } });
     }
 
     if (method === "prompts/list") {
-      return res.status(200).json({ jsonrpc: "2.0", id, result: { prompts: [] } });
+      return res.status(200).json({
+        jsonrpc: "2.0",
+        id,
+        result: {
+          prompts: [
+            {
+              name: "launch_readiness_audit",
+              description: "Run a complete post-deploy technical SEO, AI search crawler, llms.txt, and checkout readiness audit on a live URL.",
+              arguments: [{ name: "url", description: "Public HTTP/HTTPS URL of the deployed web app to audit.", required: true }]
+            }
+          ]
+        }
+      });
     }
 
     if (method === "resources/list") {

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readline from "node:readline";
-import { MCP_TOOLS, executeMcpToolCall } from "git-paid/lib/mcp.js";
-import { POSTBUILD_VERSION } from "git-paid/lib/stateful-mcp.js";
+import { executeMcpToolCall } from "git-paid/lib/mcp.js";
+import { ENRICHED_MCP_TOOLS, MCP_SERVER_INSTRUCTIONS } from "./tools-schema.js";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -31,6 +31,7 @@ rl.on("line", async (line) => {
         id,
         result: {
           protocolVersion: "2024-11-05",
+          instructions: MCP_SERVER_INSTRUCTIONS,
           capabilities: {
             tools: {},
             prompts: {},
@@ -38,7 +39,7 @@ rl.on("line", async (line) => {
           },
           serverInfo: {
             name: "postbuild-mcp",
-            version: POSTBUILD_VERSION || "2.1.23"
+            version: "2.1.24"
           }
         }
       });
@@ -59,7 +60,7 @@ rl.on("line", async (line) => {
         jsonrpc: "2.0",
         id,
         result: {
-          tools: MCP_TOOLS
+          tools: ENRICHED_MCP_TOOLS
         }
       });
       return;
@@ -70,7 +71,19 @@ rl.on("line", async (line) => {
         jsonrpc: "2.0",
         id,
         result: {
-          prompts: []
+          prompts: [
+            {
+              name: "launch_readiness_audit",
+              description: "Run a complete post-deploy technical SEO, AI search crawler, llms.txt, and checkout readiness audit on a live URL.",
+              arguments: [
+                {
+                  name: "url",
+                  description: "Public HTTP/HTTPS URL of the deployed web app to audit.",
+                  required: true
+                }
+              ]
+            }
+          ]
         }
       });
       return;
