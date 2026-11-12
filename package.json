@@ -1,0 +1,32 @@
+﻿{
+  "name": "postbuild-mcp",
+  "version": "2.1.23",
+  "description": "MCP Server for Postbuild (postbuild.dev / git-paid) — Technical SEO, AI Search Crawler Rules (OAI-SearchBot, ClaudeBot, PerplexityBot), llms.txt & 85-Directory Launch Kit.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "postbuild-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "postbuild",
+    "git-paid",
+    "seo",
+    "llms-txt",
+    "ai-search"
+  ],
+  "author": "Bennett Moore <bennett@postbuild.dev> (https://www.xdlabs.io)",
+  "license": "MIT",
+  "homepage": "https://www.postbuild.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdlabs-io/postbuild-mcp.git"
+  },
+  "dependencies": {
+    "git-paid": "^2.1.23"
+  }
+}
