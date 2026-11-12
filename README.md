@@ -5,6 +5,8 @@
 [![Postbuild Launch Readiness](https://www.postbuild.dev/api/badge?url=www.postbuild.dev)](https://www.postbuild.dev/?scan=postbuild.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+<a href="https://www.producthunt.com/products/postbuild/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-postbuild" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1375102&theme=neutral" alt="Postbuild - Post&#0045;deploy&#0032;SEO&#0032;audit&#0044;&#0032;llms&#0046;txt&#0032;generator&#0032;&#0038;&#0032;85&#0043;&#0032;launch&#0032;kit | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 Official Model Context Protocol (MCP) server for **[Postbuild](https://www.postbuild.dev)** (`git-paid` on npm).
 
 Audits any deployed URL for technical SEO, AI search crawler rules (`OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`), `llms.txt`, `sitemap.xml`, OpenGraph social cards, `SoftwareApplication` JSON-LD, and Stripe checkout reachability, and generates drop-in fix files.
