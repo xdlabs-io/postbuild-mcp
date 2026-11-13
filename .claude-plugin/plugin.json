@@ -1,0 +1,24 @@
+{
+  "name": "postbuild",
+  "version": "2.1.25",
+  "description": "Postbuild technical SEO & AI search readiness auditor for live web applications. Checks OAI-SearchBot, ClaudeBot, PerplexityBot, llms.txt, OpenGraph, JSON-LD, sitemaps, and Stripe checkout.",
+  "author": {
+    "name": "XD Labs",
+    "url": "https://www.xdlabs.io"
+  },
+  "homepage": "https://www.postbuild.dev",
+  "repository": "https://github.com/xdlabs-io/postbuild-mcp",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "technical-seo",
+    "ai-search",
+    "llms-txt",
+    "crawlers",
+    "claudebot",
+    "oai-searchbot",
+    "sitemap",
+    "stripe-checkout",
+    "postbuild"
+  ]
+}
