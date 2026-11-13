@@ -8,8 +8,11 @@
   },
   "homepage": "https://www.postbuild.dev",
   "repository": "https://github.com/xdlabs-io/postbuild-mcp",
-  "license": "MIT",
+  "documentationUrl": "https://github.com/xdlabs-io/postbuild-mcp#readme",
+  "supportUrl": "https://github.com/xdlabs-io/postbuild-mcp/issues",
+  "termsOfServiceUrl": "https://www.postbuild.dev/terms",
   "privacyPolicyUrl": "https://www.postbuild.dev/privacy",
+  "license": "MIT",
   "keywords": [
     "seo",
     "technical-seo",
