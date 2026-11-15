@@ -1,6 +1,6 @@
 {
   "name": "postbuild",
-  "version": "2.1.26",
+  "version": "2.1.27",
   "description": "Postbuild technical SEO & AI search readiness auditor for live web applications. Checks OAI-SearchBot, ClaudeBot, PerplexityBot, llms.txt, OpenGraph, JSON-LD, and XML sitemaps.",
   "author": {
     "name": "Bennett Moore",

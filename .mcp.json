@@ -2,7 +2,7 @@
   "mcpServers": {
     "postbuild": {
       "type": "http",
-      "url": "https://mcp.postbuild.dev/mcp"
+      "url": "https://www.postbuild.dev/api/mcp"
     }
   }
 }
