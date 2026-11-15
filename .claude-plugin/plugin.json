@@ -1,7 +1,7 @@
 {
   "name": "postbuild",
-  "version": "2.1.25",
-  "description": "Postbuild technical SEO & AI search readiness auditor for live web applications. Checks OAI-SearchBot, ClaudeBot, PerplexityBot, llms.txt, OpenGraph, JSON-LD, sitemaps, and Stripe checkout.",
+  "version": "2.1.26",
+  "description": "Postbuild technical SEO & AI search readiness auditor for live web applications. Checks OAI-SearchBot, ClaudeBot, PerplexityBot, llms.txt, OpenGraph, JSON-LD, and XML sitemaps.",
   "author": {
     "name": "Bennett Moore",
     "url": "https://www.xdlabs.io"
@@ -22,7 +22,6 @@
     "claudebot",
     "oai-searchbot",
     "sitemap",
-    "stripe-checkout",
     "postbuild"
   ]
 }

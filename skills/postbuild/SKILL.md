@@ -1,6 +1,6 @@
 ---
 name: postbuild
-description: Audit deployed websites and web applications for technical SEO, AI crawler access (OAI-SearchBot, ClaudeBot, PerplexityBot), llms.txt, sitemaps, OpenGraph cards, JSON-LD schema, and Stripe checkout readiness using the Postbuild MCP connector.
+description: Audit deployed websites and web applications for technical SEO, AI crawler access (OAI-SearchBot, ClaudeBot, PerplexityBot), llms.txt, sitemaps, OpenGraph cards, and JSON-LD schema using the Postbuild MCP connector.
 ---
 
 # Postbuild Technical SEO & AI Search Readiness

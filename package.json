@@ -1,0 +1,6 @@
+{
+  "name": "postbuild-mcp",
+  "version": "2.1.26",
+  "description": "Official Model Context Protocol (MCP) server for Postbuild",
+  "type": "module"
+}

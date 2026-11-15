@@ -9,7 +9,7 @@
 
 Official Model Context Protocol (MCP) server for **[Postbuild](https://www.postbuild.dev)** (`git-paid` on npm).
 
-Audits any deployed URL for technical SEO, AI search crawler rules (`OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`), `llms.txt`, `sitemap.xml`, OpenGraph social cards, `SoftwareApplication` JSON-LD, and Stripe checkout reachability, and generates drop-in fix files.
+Audits any deployed URL for technical SEO, AI search crawler rules (`OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`), `llms.txt`, `sitemap.xml`, OpenGraph social cards, and `SoftwareApplication` JSON-LD, and generates drop-in fix files.
 
 ---
 
@@ -42,13 +42,12 @@ npx git-paid https://yourapp.com
 
 | Tool | Description |
 | :--- | :--- |
-| `postbuild_scan` | Audits a live URL across technical SEO, OpenGraph cards, AI search crawler directives (`OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`), `llms.txt`, `sitemap.xml`, JSON-LD schema, and Stripe checkout reachability. |
-| `postbuild_fix` | Generates drop-in `robots.txt`, `llms.txt`, `sitemap.xml`, JSON-LD, and targeted HTML product pages for a local repository. |
+| `postbuild_scan` | Audits a live URL across technical SEO, OpenGraph cards, AI search crawler directives (`OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`), `llms.txt`, `sitemap.xml`, and JSON-LD schema. |
+| `postbuild_fix` | Generates drop-in `robots.txt`, `llms.txt`, `sitemap.xml`, and targeted HTML product pages. |
 | `postbuild_pseo` | Previews and generates targeted product/guide routes and structured metadata for a domain. |
 | `postbuild_directories` | Queries and filters 85 launch directories and communities by category, domain rating (DR), and submission mode. |
 | `postbuild_dispatch` | Prepares pre-filled directory launch kits and submission payloads with two-phase confirmation tokens. |
 | `postbuild_inbox` | Reads verification emails and extracts 6-digit OTPs from an assigned `@postbuild.dev` launch inbox. |
-| `postbuild_checkout` | Inspects or provisions self-serve Stripe checkout gates for a project. |
 | `postbuild_vault_sync` | Syncs domain readiness scores and directory status to an Obsidian VaultOS dashboard. |
 
 ---
