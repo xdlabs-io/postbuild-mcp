@@ -15,26 +15,24 @@ Audits any deployed URL for technical SEO, AI search crawler rules (`OAI-SearchB
 
 ## Quick Start
 
-### Claude Code / Cursor / Windsurf / Claude Desktop
+Postbuild runs as a hosted MCP server. Nothing is installed on your machine.
 
-Add `postbuild` to your MCP client configuration (`claude_desktop_config.json` or `.cursor/mcp.json`):
+### Claude Code / Claude Desktop
+
+Install the plugin from the Claude directory, or add the connector yourself:
 
 ```json
 {
   "mcpServers": {
     "postbuild": {
-      "command": "npx",
-      "args": ["-y", "git-paid", "mcp"]
+      "type": "http",
+      "url": "https://www.postbuild.dev/api/mcp"
     }
   }
 }
 ```
 
-Or run the CLI directly from your terminal:
-
-```bash
-npx git-paid https://yourapp.com
-```
+`postbuild_scan` works without an account. For the command-line tool, see [`git-paid` on npm](https://www.npmjs.com/package/git-paid).
 
 ---
 
